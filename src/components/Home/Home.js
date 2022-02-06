@@ -45,6 +45,7 @@ const Home = () => {
               <div className="user border border p-2 m-2">
                 <h1>{pd.name}</h1>
                 <h6>{pd.email}</h6>
+                <h6>{pd.phone}</h6>
                 <h6>{pd.password}</h6>
                 <button onClick={() => { handleDelete(pd._id) }} className="btn btn-danger p-1 m-2">Delete</button>
                 <Link to={`/update/${pd._id}`}>
